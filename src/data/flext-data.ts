@@ -1,4 +1,6 @@
-export const flexData = {
+import { FlexData } from "../utils/interface";
+
+export const flexData: FlexData = {
   justify: [
     {
       id: 1,

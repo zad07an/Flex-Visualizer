@@ -6,6 +6,13 @@ export interface InitialStateValues {
   elementsAmount: number;
 }
 
+export interface FlexData {
+  justify: {id: number, title: string, value: string}[];
+  align: {id: number, title: string, value: string}[];
+  direction: {id: number, title: string, value: string}[];
+  wrap: {id: number, title: string, value: string}[];
+}
+
 export interface InputsFieldProps {
   inputVal: InitialStateValues;
   setInputVal: React.Dispatch<React.SetStateAction<InitialStateValues>>;
