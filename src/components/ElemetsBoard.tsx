@@ -11,10 +11,10 @@ const ElemetsBoard: React.FC<ElementsBoardProps> = ({ inputVal }) => {
   }
 
   const styles: StyleProperties = {
-    'justifyContent': `${inputVal?.justify}`,
-    'alignItems': `${inputVal?.align}`,
-    'flexDirection': `${inputVal?.direction}`,
-    'flexWrap': `${inputVal?.wrap}`,
+    'justifyContent': inputVal?.justify,
+    'alignItems': inputVal?.align,
+    'flexDirection': inputVal?.direction,
+    'flexWrap': inputVal?.wrap,
   };
 
   return (
