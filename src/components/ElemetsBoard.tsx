@@ -1,25 +1,27 @@
 import React from "react";
-import { ElementsBoardProps } from "../utils/interface";
+import { ElementsBoardProps, StyleProperties } from "../utils/interface";
 
 const ElemetsBoard: React.FC<ElementsBoardProps> = ({ inputVal }) => {
   const elements = [];
 
-  if (inputVal.elementsAmount >= 1 && inputVal.elementsAmount <= 10) {
+  if (inputVal.elementsAmount >= 1 && inputVal.elementsAmount <= 15) {
     for (let i = 1; i <= Number(inputVal?.elementsAmount); i++) {
       elements.push(i);
     }
   }
 
+  const styles: StyleProperties = {
+    'justifyContent': `${inputVal?.justifyContent}`,
+    'alignItems': `${inputVal?.alignItems}`,
+    'flexDirection': `${inputVal?.flexDirection}`,
+    'flexWrap': `${inputVal?.flexWrap}`,
+  };
+
   return (
-    <div className=" w-full px-[120px] pt-10 pb-5">
+    <div className=" overflow-hidden">
       <div
-        className=" w-full min-h-[400px] flex border-2 rounded-md border-gray-300 transition-all overflow-hidden"
-        style={{
-          justifyContent: inputVal?.justify,
-          alignItems: inputVal?.align,
-          flexDirection: inputVal?.direction,
-          flexWrap: inputVal?.wrap,
-        }}
+        className="  min-h-[400px] flex border-2 rounded-md border-gray-300 transition-all"
+        style={styles as React.CSSProperties}
       >
         {elements?.map((element, index) => {
           return (

@@ -23,11 +23,11 @@ const InputsField: React.FC<InputsFieldProps> = ({ inputVal, setInputVal }) => {
             placeholder="How many elements do you want?"
             className=" w-[300px] px-2 border-2 border-blue-600 h-[40px] rounded-md outline-0 focus:border-red-600 transition-all"
             min={1}
-            max={10}
+            max={15}
           />
-          {inputVal?.elementsAmount > 10 ? (
+          {inputVal?.elementsAmount > 15 ? (
             <span className=" text-red-500">
-              Maximum number of elements should be 10
+              Maximum number of elements should be 15
             </span>
           ) : inputVal?.elementsAmount < 1 ? (
             <span className=" text-red-500">

@@ -1,8 +1,8 @@
 export interface InitialStateValues {
-  justify: string;
-  align: string;
-  direction: string;
-  wrap: string;
+  justifyContent: string;
+  alignItems: string;
+  flexDirection: string;
+  flexWrap: string;
   elementsAmount: number;
 }
 
@@ -13,4 +13,11 @@ export interface InputsFieldProps {
 
 export interface ElementsBoardProps {
   inputVal: InitialStateValues;
+}
+
+export interface StyleProperties {
+  justifyContent: string;
+  alignItems: string;
+  flexDirection: string,
+  flexWrap: string;
 }
