@@ -11,13 +11,15 @@ const ShowCSS: React.FC<ElementsBoardProps> = ({ inputVal }) => {
     setTimeout(() => setIsCopied(false), 2000);
   };
 
+  console.log(inputVal)
+
   const cssCode = `
     .container {
       display: flex;
-      justify-content: ${inputVal?.justifyContent};
-      align-items: ${inputVal?.alignItems};
-      flex-direction: ${inputVal?.flexDirection};
-      flex-wrap: ${inputVal?.flexWrap};
+      justify-content: ${inputVal?.justify};
+      align-items: ${inputVal?.align};
+      flex-direction: ${inputVal?.direction};
+      flex-wrap: ${inputVal?.wrap};
     }
   `;
 

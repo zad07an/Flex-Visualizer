@@ -1,8 +1,8 @@
 export interface InitialStateValues {
-  justifyContent: string;
-  alignItems: string;
-  flexDirection: string;
-  flexWrap: string;
+  justify: string;
+  align: string;
+  direction: string;
+  wrap: string;
   elementsAmount: number;
 }
 

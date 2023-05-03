@@ -6,10 +6,10 @@ import Navbar from "./components/Navbar";
 import ShowCSS from "./components/ShowCSS";
 
 const initialState: InitialStateValues = {
-  justifyContent: "flex-start",
-  alignItems: "flex-start",
-  flexDirection: "row",
-  flexWrap: "nowrap",
+  justify: "flex-start",
+  align: "flex-start",
+  direction: "row",
+  wrap: "nowrap",
   elementsAmount: 1,
 };
 
