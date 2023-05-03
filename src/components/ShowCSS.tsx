@@ -11,8 +11,6 @@ const ShowCSS: React.FC<ElementsBoardProps> = ({ inputVal }) => {
     setTimeout(() => setIsCopied(false), 2000);
   };
 
-  console.log(inputVal)
-
   const cssCode = `
     .container {
       display: flex;
