@@ -125,7 +125,7 @@ const InputsField: React.FC<InputsFieldProps> = ({ inputVal, setInputVal }) => {
         </div>
         <div className=" flex flex-col items-start gap-2">
           <div>
-            <p className=" text-lg text-gray-500 font-medium">Flex Direction</p>
+            <p className=" text-lg text-gray-500 font-medium">Flex Wrap</p>
           </div>
           <select
             name="wrap"
